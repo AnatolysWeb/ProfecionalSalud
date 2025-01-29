@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Turnos - Profesional de la Salud</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Información del Doctor</h1>
+        <div class="doctor-info">
+            <p><strong>Nombre:</strong> Dr. Juan Pérez</p>
+            <p><strong>Especialidad:</strong> Cardiología</p>
+            <p><strong>Teléfono:</strong> (123) 456-7890</p>
+            <p><strong>Correo:</strong> dr.perez@example.com</p>
+        </div>
+
+        <h1>Gestión de Turnos</h1>
+
+        <form id="turnoForm">
+            <label for="nombre">Nombre del Paciente:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese el nombre del paciente" required>
+
+            <label for="fecha">Fecha del Turno:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="hora">Hora del Turno:</label>
+            <input type="time" id="hora" name="hora" required>
+
+            <label for="consultorio">Seleccionar Consultorio:</label>
+            <select id="consultorio" name="consultorio" required>
+                <option value="Consultorio 1">Consultorio 1</option>
+                <option value="Consultorio 2">Consultorio 2</option>
+                <option value="Consultorio 3">Consultorio 3</option>
+            </select>
+
+            <label for="motivo">Motivo de la Consulta:</label>
+            <textarea id="motivo" name="motivo" rows="4" placeholder="Describa brevemente el motivo de la consulta" required></textarea>
+
+            <button type="submit">Agregar Turno</button>
+        </form>
+
+        <div class="turnos-list" id="turnosList">
+            <h2>Lista de Turnos</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
